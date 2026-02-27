@@ -48,7 +48,7 @@ EV_SET(kq, ident, filter, flags, fflags = 0, data = 0, udata = NULL)
     uintptr_t   ident
     short       filter
     u_short     flags
-    u_short     fflags
+    u_int       fflags
     intptr_t    data
     SV        * udata
   PREINIT:
