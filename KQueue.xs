@@ -144,7 +144,7 @@ get_kev(kq, i)
   PREINIT:
     dXSTARG;
   CODE:
-    if (i < 0 || i >= 1000) {
+    if (i <= 0 || i > 1000) {
         croak("Invalid kevent id: %d", i);
     }
     
